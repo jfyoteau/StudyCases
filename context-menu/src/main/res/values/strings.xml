@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="context_menu">M</string>
+    <string name="context_menu_title">Title</string>
+</resources>

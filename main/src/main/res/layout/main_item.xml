@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <data>
+
+        <variable
+            name="data"
+            type="com.github.jfyoteau.studycases.main.ui.main.MainViewModel.MenuValue" />
+
+        <variable
+            name="viewModel"
+            type="com.github.jfyoteau.studycases.main.ui.main.MainViewModel" />
+
+    </data>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp">
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:onClick="@{() -> viewModel.clickMenu(data)}"
+            android:text="@{data.label}"
+            android:textAllCaps="false" />
+
+    </FrameLayout>
+
+</layout>
